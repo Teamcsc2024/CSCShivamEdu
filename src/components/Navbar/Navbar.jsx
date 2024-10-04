@@ -29,14 +29,7 @@ const Navbar = () => {
           {/* Menu section */}
           <div className="hidden lg:block">
             <ul className="flex items-center gap-6">
-            <li className="cursor pointer group relative">
-            <a href="/#home" className="flex h-[72px] items-center gap-[2px]">
-                Home{" "}
-                <span>
-                  <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
-                </span>
-              </a>
-              </li>
+            
               {NavbarMenu.map((item) => {
                 return (
                   <li key={item.id}>
