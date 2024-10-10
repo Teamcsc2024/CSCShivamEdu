@@ -1,4 +1,4 @@
-
+import React from "react";
 import { motion } from "framer-motion";
 import { FaComputer, FaBook } from "react-icons/fa6";
 
