@@ -1,5 +1,5 @@
-import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import PropTypes from "prop-types";
 
 const ResponsiveMenu = ({ isOpen }) => {
   return (
@@ -25,6 +25,11 @@ const ResponsiveMenu = ({ isOpen }) => {
       )}
     </AnimatePresence>
   );
+};
+
+// Define prop types
+ResponsiveMenu.propTypes = {
+  isOpen: PropTypes.bool.isRequired, // isOpen must be a boolean and required
 };
 
 export default ResponsiveMenu;
