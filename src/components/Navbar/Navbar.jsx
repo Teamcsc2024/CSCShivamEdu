@@ -4,6 +4,7 @@ import { MdMenu } from "react-icons/md";
 import { motion } from "framer-motion";
 import CSCShivam from"../../assets/CSCshivam.png";
 import ResponsiveMenu from "./ResponsiveMenu.jsx";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -46,10 +47,16 @@ const Navbar = () => {
           </div>
           {/* CTA Button section */}
           <div className="hidden lg:block space-x-6">
-            <button className="font-semibold">Sign in</button>
-            <button className="text-white bg-secondary font-semibold rounded-full px-5 py-1 ">
+           <Link to="/login"
+           className="font-semibold"
+           >
+            Login
+            </Link> 
+            <Link to="/register"
+            className="text-white bg-secondary font-semibold rounded-full px-5 py-1 "
+            >
               Register
-            </button>
+              </Link>
           </div>
           {/* Mobile Hamburger Menu */}
           <div className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>

@@ -1,4 +1,3 @@
-import React from "react";
 import HeroImg from "../../assets/hero.png";
 import { FaPlay } from "react-icons/fa";
 import { motion } from "framer-motion";
